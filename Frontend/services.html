@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Motorcycles</a></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Services</h1>
+
+    <main>
+        <div class="services-container">
+            <div class="card-header">Add Motorcycle</div>
+            <div class="card-body">
+                <form id="motorcycleForm">
+                    <div class="form-card">
+                        <label id="make-label" for="make" class="form-label">Make</label>
+                        <input type="text" class="form-control" id="make" required>
+                    </div>
+                    <div class="form-card">
+                        <label id="model-label" for="model" class="form-label">Model</label>
+                        <input type="text" class="form-control" id="model" required>
+                    </div>
+                    <div class="form-card">
+                        <label id="year-label" for="year" class="form-label">Year</label>
+                        <input type="number" class="form-control" id="year" required>
+                    </div>
+                    <button type="button" class="submit-btn" id="addMotorcycleBtn">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Motorcycles Table -->
+        <div class="table-container">
+            <div class="table-header">Motorcycles List</div>
+            <div class="table-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="motorcycleTableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="services.js"></script>
+</body>
+</html>
