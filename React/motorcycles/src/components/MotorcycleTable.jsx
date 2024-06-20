@@ -17,7 +17,11 @@ function MotorcycleTable({ motorcycles, onDeleteMotorcycle }) {
                 </thead>
                 <tbody>
                     {motorcycles.map(motorcycle => (
-                        <MotorcycleRow key={motorcycle.id} motorcycle={motorcycle} onDelete={() => onDeleteMotorcycle(motorcycle.id)} />
+                        <MotorcycleRow 
+                            key={motorcycle.id} 
+                            motorcycle={motorcycle} 
+                            onDelete={() => onDeleteMotorcycle(motorcycle.id)} 
+                        />
                     ))}
                 </tbody>
             </table>

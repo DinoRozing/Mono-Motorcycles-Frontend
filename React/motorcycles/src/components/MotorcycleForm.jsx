@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import './css/MotorcycleForm.css';
-import { addMotorcycle } from '../utils/localStorage';
 
 function MotorcycleForm({ onAddMotorcycle }) {
     const makeRef = useRef();
@@ -19,11 +18,13 @@ function MotorcycleForm({ onAddMotorcycle }) {
             return;
         }
 
-        addMotorcycle({ make, model, year });
+        const newMotorcycle = { 
+            make, 
+            model, 
+            year 
+        };
 
-        if (typeof onAddMotorcycle === 'function') {
-            onAddMotorcycle({ make, model, year });
-        }
+        onAddMotorcycle(newMotorcycle);
 
         makeRef.current.value = '';
         modelRef.current.value = '';

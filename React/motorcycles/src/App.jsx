@@ -14,12 +14,14 @@ function ServicePage() {
 
     function handleAddMotorcycle(newMotorcycle) {
         addMotorcycle(newMotorcycle);
-        setMotorcycles([...motorcycles, newMotorcycle]);
+        const updatedMotorcycles = getAllMotorcycles();
+        setMotorcycles(updatedMotorcycles);
     }
 
     function handleDeleteMotorcycle(idToDelete) {
         deleteMotorcycle(idToDelete);
-        setMotorcycles(motorcycles.filter((motorcycle) => motorcycle.id !== idToDelete));
+        const updatedMotorcycles = getAllMotorcycles();
+        setMotorcycles(updatedMotorcycles);
     }
 
     return (
@@ -44,7 +46,10 @@ function ServicePage() {
                     </div>
                     <div className="table-container">
                         <h2>Motorcycle List</h2>
-                        <MotorcycleTable motorcycles={motorcycles} onDeleteMotorcycle={handleDeleteMotorcycle} />
+                        <MotorcycleTable 
+                            motorcycles={motorcycles} 
+                            onDeleteMotorcycle={handleDeleteMotorcycle}
+                        />
                     </div>
                 </section>
             </main>
