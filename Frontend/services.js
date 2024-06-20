@@ -1,14 +1,36 @@
+let motorcycles = JSON.parse(localStorage.getItem('motorcycles')) || [];
+let currentId = motorcycles.length > 0 ? motorcycles[motorcycles.length - 1].id : 0;
+
+function fillTable() {
+    const motorcycleTableBody = document.getElementById('motorcycleTableBody');
+    motorcycleTableBody.innerHTML = '';
+    motorcycles.forEach(motorcycle => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${motorcycle.id}</td>
+            <td>${motorcycle.make}</td>
+            <td>${motorcycle.model}</td>
+            <td>${motorcycle.year}</td>
+            <td>
+                <button class="update-btn">Update</button>
+                <button class="delete-btn">Delete</button>
+            </td>
+        `;
+        motorcycleTableBody.appendChild(row);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const addButton = document.querySelector('.submit-btn');
     const makeInput = document.getElementById('make-label');
     const modelInput = document.getElementById('model-label');
     const yearInput = document.getElementById('year-label');
     const motorcycleTableBody = document.getElementById('motorcycleTableBody');
-    let currentId = 0;
 
-    let motorcycles = JSON.parse(localStorage.getItem('motorcycles')) || [];
+    fillTable();    
 
-        fillTable();    
+    let isUpdateMode = false;
+    let motorcycleIdToUpdate = null;
 
     addButton.addEventListener('click', function(event) {
         event.preventDefault();
@@ -31,21 +53,35 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
     
-        currentId++;
+        if (isUpdateMode) {
+            const motorcycle = motorcycles.find(motorcycle => motorcycle.id === motorcycleIdToUpdate);
+            motorcycle.make = make;
+            motorcycle.model = model;
+            motorcycle.year = year;
+
+            localStorage.setItem('motorcycles', JSON.stringify(motorcycles));
+            fillTable();
+
+            isUpdateMode = false;
+            motorcycleIdToUpdate = null;
+            addButton.textContent = 'Add';
+        } else {
+            currentId++;
     
-        const newMotorcycle = {
-            id: currentId,
-            make: make,
-            model: model,
-            year: year
-        };
-    
-        motorcycles.push(newMotorcycle);
-    
-        localStorage.setItem('motorcycles', JSON.stringify(motorcycles));
-    
-        fillTable();
-    
+            const newMotorcycle = {
+                id: currentId,
+                make: make,
+                model: model,
+                year: year
+            };
+        
+            motorcycles.push(newMotorcycle);
+        
+            localStorage.setItem('motorcycles', JSON.stringify(motorcycles));
+        
+            fillTable();
+        }
+
         makeInput.value = '';
         modelInput.value = '';
         yearInput.value = '';
@@ -62,22 +98,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             fillTable();
         }
+
+        if (event.target.classList.contains('update-btn')) {
+            const row = event.target.closest('tr');
+            motorcycleIdToUpdate = parseInt(row.firstElementChild.textContent);
+            const motorcycle = motorcycles.find(motorcycle => motorcycle.id === motorcycleIdToUpdate);
+
+            document.getElementById('make').value = motorcycle.make;
+            document.getElementById('model').value = motorcycle.model;
+            document.getElementById('year').value = motorcycle.year;
+
+            isUpdateMode = true;
+            addButton.textContent = 'Update';
+        }
     });
 });
-
-// FUNCTIONS
-
-function fillTable() {
-    motorcycleTableBody.innerHTML = '';
-    motorcycles.forEach(motorcycle => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${motorcycle.id}</td>
-            <td>${motorcycle.make}</td>
-            <td>${motorcycle.model}</td>
-            <td>${motorcycle.year}</td>
-            <td><button class="delete-btn">Delete</button></td>
-        `;
-        motorcycleTableBody.appendChild(row);
-    });
-};
