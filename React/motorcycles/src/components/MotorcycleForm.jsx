@@ -31,7 +31,7 @@ function MotorcycleForm({ onAddMotorcycle, onUpdateMotorcycle, motorcycleToEdit 
         }
 
         const motorcycle = { 
-            id: motorcycleToEdit ? motorcycleToEdit.id : Date.now(), // Use existing ID if editing, otherwise generate new ID
+            id: motorcycleToEdit ? motorcycleToEdit.id : Date.now(), 
             make, 
             model, 
             year 

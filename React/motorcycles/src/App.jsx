@@ -29,7 +29,7 @@ function ServicePage() {
         updateMotorcycle(updatedMotorcycle);
         const updatedMotorcycles = getAllMotorcycles();
         setMotorcycles(updatedMotorcycles);
-        setMotorcycleToEdit(null); // Sakrij obrazac za ažuriranje nakon ažuriranja
+        setMotorcycleToEdit(null);
     }
 
     function handleEditClick(motorcycle) {
