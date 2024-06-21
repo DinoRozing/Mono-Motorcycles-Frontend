@@ -22,3 +22,11 @@ export function deleteMotorcycle(idToDelete) {
     console.log('Updated motorcycles after delete:', motorcycles);
 }
 
+export function updateMotorcycle(updatedMotorcycle) {
+    let motorcycles = getAllMotorcycles();
+    motorcycles = motorcycles.map(motorcycle =>
+        motorcycle.id === updatedMotorcycle.id ? updatedMotorcycle : motorcycle);
+    localStorage.setItem('motorcycles', JSON.stringify(motorcycles));
+    console.log('Updated motorcycle:', updatedMotorcycle);
+    console.log('Updated motorcycles list:', motorcycles);
+}

@@ -13,6 +13,10 @@ class MotorcycleRow extends Component {
         this.props.onDelete();
     }
 
+    handleUpdate = () => {
+        this.props.onUpdate(this.props.motorcycle);
+    }
+
     render() {
         const { motorcycle } = this.props;
         const { isDeleted } = this.state;
@@ -29,6 +33,7 @@ class MotorcycleRow extends Component {
                 <td>{motorcycle.year}</td>
                 <td>
                     <button onClick={this.handleDelete} className="delete-btn">Delete</button>
+                    <button onClick={this.handleUpdate} className="update-btn">Update</button>
                 </td>
             </tr>
         );
