@@ -1,11 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './css/MotorcycleForm.css';
-import { addMotorcycle } from '../utils/localStorage';
 
-function MotorcycleForm({ onAddMotorcycle }) {
+function MotorcycleForm({ onAddMotorcycle, onUpdateMotorcycle, motorcycleToEdit }) {
     const makeRef = useRef();
     const modelRef = useRef();
     const yearRef = useRef();
+
+    useEffect(() => {
+        if (motorcycleToEdit) {
+            makeRef.current.value = motorcycleToEdit.make;
+            modelRef.current.value = motorcycleToEdit.model;
+            yearRef.current.value = motorcycleToEdit.year;
+        } else {
+            makeRef.current.value = '';
+            modelRef.current.value = '';
+            yearRef.current.value = '';
+        }
+    }, [motorcycleToEdit]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -19,10 +30,17 @@ function MotorcycleForm({ onAddMotorcycle }) {
             return;
         }
 
-        addMotorcycle({ make, model, year });
+        const motorcycle = { 
+            id: motorcycleToEdit ? motorcycleToEdit.id : Date.now(), 
+            make, 
+            model, 
+            year 
+        };
 
-        if (typeof onAddMotorcycle === 'function') {
-            onAddMotorcycle({ make, model, year });
+        if (motorcycleToEdit) {
+            onUpdateMotorcycle(motorcycle);
+        } else {
+            onAddMotorcycle(motorcycle);
         }
 
         makeRef.current.value = '';
@@ -36,7 +54,7 @@ function MotorcycleForm({ onAddMotorcycle }) {
                 <input type="text" ref={makeRef} placeholder="Make" required />
                 <input type="text" ref={modelRef} placeholder="Model" required />
                 <input type="number" ref={yearRef} placeholder="Year" required />
-                <button type="submit">Add Motorcycle</button>
+                <button type="submit">{motorcycleToEdit ? "Update" : "Add"} Motorcycle</button>
             </form>
         </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import './css/MotorcycleTable.css';
 import MotorcycleRow from './MotorcycleRow';
 
-function MotorcycleTable({ motorcycles, onDeleteMotorcycle }) {
+function MotorcycleTable({ motorcycles, onDeleteMotorcycle, onEditMotorcycle }) {
     return (
         <div className="table-container">
             <table className="table">
@@ -17,7 +17,12 @@ function MotorcycleTable({ motorcycles, onDeleteMotorcycle }) {
                 </thead>
                 <tbody>
                     {motorcycles.map(motorcycle => (
-                        <MotorcycleRow key={motorcycle.id} motorcycle={motorcycle} onDelete={() => onDeleteMotorcycle(motorcycle.id)} />
+                        <MotorcycleRow 
+                            key={motorcycle.id} 
+                            motorcycle={motorcycle} 
+                            onDelete={() => onDeleteMotorcycle(motorcycle.id)}
+                            onUpdate={() => onEditMotorcycle(motorcycle)} 
+                        />
                     ))}
                 </tbody>
             </table>
