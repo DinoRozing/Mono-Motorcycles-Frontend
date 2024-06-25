@@ -42,12 +42,6 @@ namespace Motorcycles.Service
             return _mapper.Map<MotorcycleDTO>(motorcycle);
         }
 
-        public async Task<List<MotorcycleDTO>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
-        {
-            var motorcycles = await _motorcycleRepository.GetMotorcyclesByUserNameAsync(firstName, lastName);
-            return _mapper.Map<List<MotorcycleDTO>>(motorcycles);
-        }
-
         public async Task<List<MotorcycleDTO>> GetMotorcyclesAsync()
         {
             var motorcycles = await _motorcycleRepository.GetMotorcyclesAsync();

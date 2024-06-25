@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Motorcycles.Service.Common;
 using Motorcycles.Service.Common.DTOs;
-using System;
-using System.Threading.Tasks;
 
 namespace Motorcycles.WebAPI.Controllers
 {
@@ -17,8 +15,7 @@ namespace Motorcycles.WebAPI.Controllers
             _motorcycleService = motorcycleService;
         }
 
-        [HttpPost]
-        [Route("AddMotorcycle")]
+        [HttpPost("AddMotorcycle")]
         public async Task<IActionResult> AddMotorcycleAsync([FromBody] MotorcycleDTO motorcycleDto)
         {
             if (motorcycleDto == null)
@@ -37,9 +34,8 @@ namespace Motorcycles.WebAPI.Controllers
             }
         }
 
-        [HttpPut]
-        [Route("UpdateMotorcycle")]
-        public async Task<IActionResult> UpdateMotorcycleAsync([FromBody] MotorcycleDTO motorcycleDto)
+        [HttpPut("UpdateMotorcycle/{id}")]
+        public async Task<IActionResult> UpdateMotorcycleAsync(int id, [FromBody] MotorcycleDTO motorcycleDto)
         {
             if (motorcycleDto == null || motorcycleDto.Id == 0)
             {
@@ -57,8 +53,7 @@ namespace Motorcycles.WebAPI.Controllers
             }
         }
 
-        [HttpDelete]
-        [Route("DeleteMotorcycle")]
+        [HttpDelete("DeleteMotorcycle/{id}")]
         public async Task<IActionResult> DeleteMotorcycleAsync(int id)
         {
             if (id == 0)
@@ -77,8 +72,7 @@ namespace Motorcycles.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("GetMotorcycleById")]
+        [HttpGet("GetMotorcycleById/{id}")]
         public async Task<IActionResult> GetMotorcycleAsync(int id)
         {
             if (id == 0)
@@ -104,11 +98,9 @@ namespace Motorcycles.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("GetMotorcycles")]
-        public async Task<IActionResult> GetMotorcycleAsync()
+        [HttpGet("GetMotorcycles")]
+        public async Task<IActionResult> GetMotorcyclesAsync()
         {
-
             try
             {
                 var motorcycles = await _motorcycleService.GetMotorcyclesAsync();
@@ -118,27 +110,8 @@ namespace Motorcycles.WebAPI.Controllers
                 }
                 else
                 {
-                    return NotFound($"Motorcycles not found.");
+                    return NotFound("Motorcycles not found.");
                 }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error: {ex.Message}");
-            }
-        }
-        [HttpGet]
-        [Route("GetMotorcycleByName")]
-        public async Task<IActionResult> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
-        {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
-            {
-                return BadRequest("Invalid user name.");
-            }
-
-            try
-            {
-                var motorcycles = await _motorcycleService.GetMotorcyclesByUserNameAsync(firstName, lastName);
-                return Ok(motorcycles);
             }
             catch (Exception ex)
             {

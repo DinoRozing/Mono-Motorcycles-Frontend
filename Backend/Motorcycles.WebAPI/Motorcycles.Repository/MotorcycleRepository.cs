@@ -5,6 +5,7 @@ using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Motorcycles.Repository
 {
@@ -27,8 +28,8 @@ namespace Motorcycles.Repository
                 {
                     command.Connection = connection;
                     command.CommandText = @"
-                        INSERT INTO ""Motorcycle"" (""Make"", ""Model"", ""Year"", ""IsDeleted"", ""CreatedByUserId"", ""UpdatedByUserId"", ""DateCreated"", ""DateUpdated"")
-                        VALUES (@Make, @Model, @Year, @IsDeleted, @CreatedByUserId, @UpdatedByUserId, @DateCreated, @DateUpdated)";
+                INSERT INTO ""Motorcycle"" (""Make"", ""Model"", ""Year"", ""IsDeleted"", ""CreatedByUserId"", ""UpdatedByUserId"", ""DateCreated"", ""DateUpdated"")
+                VALUES (@Make, @Model, @Year, @IsDeleted, @CreatedByUserId, @UpdatedByUserId, @DateCreated, @DateUpdated)";
 
                     command.Parameters.AddWithValue("Make", (object?)motorcycle.Make ?? DBNull.Value);
                     command.Parameters.AddWithValue("Model", (object?)motorcycle.Model ?? DBNull.Value);
@@ -168,49 +169,6 @@ namespace Motorcycles.Repository
                 }
                 return list;
             }
-        }
-
-        public async Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
-        {
-            var motorcycles = new List<Motorcycle>();
-
-            using (var connection = new NpgsqlConnection(_connectionString))
-            {
-                await connection.OpenAsync();
-                using (var command = new NpgsqlCommand())
-                {
-                    command.Connection = connection;
-                    command.CommandText = @"
-                        SELECT m.* 
-                        FROM ""Motorcycle"" m
-                        INNER JOIN ""User"" u ON m.""CreatedByUserId"" = u.""Id"" OR m.""UpdatedByUserId"" = u.""Id""
-                        WHERE u.""FirstName"" = @FirstName AND u.""LastName"" = @LastName";
-
-                    command.Parameters.AddWithValue("FirstName", firstName);
-                    command.Parameters.AddWithValue("LastName", lastName);
-
-                    using (var reader = await command.ExecuteReaderAsync())
-                    {
-                        while (await reader.ReadAsync())
-                        {
-                            motorcycles.Add(new Motorcycle
-                            {
-                                Id = reader.GetInt32(reader.GetOrdinal("Id")),
-                                Make = reader.GetString(reader.GetOrdinal("Make")),
-                                Model = reader.GetString(reader.GetOrdinal("Model")),
-                                Year = reader.GetInt32(reader.GetOrdinal("Year")),
-                                IsDeleted = reader.GetBoolean(reader.GetOrdinal("IsDeleted")),
-                                CreatedByUserId = reader.GetInt32(reader.GetOrdinal("CreatedByUserId")),
-                                UpdatedByUserId = reader.GetInt32(reader.GetOrdinal("UpdatedByUserId")),
-                                DateCreated = reader.GetDateTime(reader.GetOrdinal("DateCreated")),
-                                DateUpdated = reader.GetDateTime(reader.GetOrdinal("DateUpdated"))
-                            });
-                        }
-                    }
-                }
-            }
-
-            return motorcycles;
         }
     }
 }

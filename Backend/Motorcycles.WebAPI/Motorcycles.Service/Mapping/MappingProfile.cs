@@ -10,6 +10,6 @@ namespace Motorcycles.Service.Mapping
         {
             CreateMap<Motorcycle, MotorcycleDTO>();
             CreateMap<MotorcycleDTO, Motorcycle>().ForMember(p => p.Id, opt => opt.Ignore());
-                }
+        }
     }
 }

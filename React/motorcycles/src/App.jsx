@@ -22,7 +22,6 @@ function ServicePage() {
 
     const handleAddMotorcycle = async (newMotorcycle) => {
         try {
-            debugger;
             await addMotorcycle(newMotorcycle);
             const updatedMotorcycles = await getAllMotorcycles();
             setMotorcycles(updatedMotorcycles);

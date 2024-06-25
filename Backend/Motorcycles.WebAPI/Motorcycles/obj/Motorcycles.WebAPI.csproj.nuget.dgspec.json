@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj": {}
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj",
         "projectName": "Motorcycles.Repository.Common",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
               }
             }
           }
@@ -79,17 +79,17 @@
         }
       }
     },
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj": {
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj",
         "projectName": "Motorcycles.Repository",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,11 +104,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
               }
             }
           }
@@ -165,17 +165,17 @@
         }
       }
     },
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
         "projectName": "Motorcycles.Service.Common",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,8 +190,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
               }
             }
           }
@@ -248,17 +248,17 @@
         }
       }
     },
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj": {
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj",
         "projectName": "Motorcycles.Service",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -273,14 +273,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
               }
             }
           }
@@ -337,17 +337,17 @@
         }
       }
     },
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj": {
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
         "projectName": "Motorcycles.WebAPI",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Motorcycles.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -362,20 +362,20 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository.Common\\Motorcycles.Repository.Common.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\Motorcycles.Repository.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Motorcycles.Service.csproj"
               },
-              "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-                "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+              "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+                "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
               }
             }
           }
@@ -439,17 +439,17 @@
         }
       }
     },
-    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+    "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
+        "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
         "projectName": "Motorcycles.Model",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\obj\\",
+        "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
+        "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
