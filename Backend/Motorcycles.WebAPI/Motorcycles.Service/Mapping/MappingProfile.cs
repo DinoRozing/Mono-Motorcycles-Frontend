@@ -8,7 +8,8 @@ namespace Motorcycles.Service.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<Motorcycle, MotorcycleDTO>().ReverseMap();
-        }
+            CreateMap<Motorcycle, MotorcycleDTO>();
+            CreateMap<MotorcycleDTO, Motorcycle>().ForMember(p => p.Id, opt => opt.Ignore());
+                }
     }
 }

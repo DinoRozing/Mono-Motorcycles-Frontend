@@ -11,5 +11,6 @@ namespace Motorcycles.Service.Common
         Task DeleteMotorcycleAsync(int id);
         Task<MotorcycleDTO> GetMotorcycleAsync(int id);
         Task<List<MotorcycleDTO>> GetMotorcyclesByUserNameAsync(string firstName, string lastName);
+        Task<List<MotorcycleDTO>> GetMotorcyclesAsync();
     }
 }

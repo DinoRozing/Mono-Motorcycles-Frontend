@@ -126,6 +126,50 @@ namespace Motorcycles.Repository
             }
         }
 
+        public async Task<List<Motorcycle>> GetMotorcyclesAsync()
+        {
+            var list = new List<Motorcycle>();
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                using (var command = new NpgsqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = @"SELECT * FROM ""Motorcycle""";
+
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        if (reader.HasRows)
+                        {
+                            while(await reader.ReadAsync())
+                            {
+                                list.Add(new Motorcycle
+                                {
+                                    Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                                    Make = reader.GetString(reader.GetOrdinal("Make")),
+                                    Model = reader.GetString(reader.GetOrdinal("Model")),
+                                    Year = reader.GetInt32(reader.GetOrdinal("Year")),
+                                    IsDeleted = reader.GetBoolean(reader.GetOrdinal("IsDeleted")),
+                                    CreatedByUserId = reader.GetInt32(reader.GetOrdinal("CreatedByUserId")),
+                                    UpdatedByUserId = reader.GetInt32(reader.GetOrdinal("UpdatedByUserId")),
+                                    DateCreated = reader.GetDateTime(reader.GetOrdinal("DateCreated")),
+                                    DateUpdated = reader.GetDateTime(reader.GetOrdinal("DateUpdated"))
+                                });
+                            }
+
+                           
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+                return list;
+            }
+        }
+
         public async Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
         {
             var motorcycles = new List<Motorcycle>();

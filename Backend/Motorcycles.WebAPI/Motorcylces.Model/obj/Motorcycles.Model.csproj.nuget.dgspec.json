@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {}
+    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+    "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
         "projectName": "Motorcycles.Model",
-        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
+        "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj",
         "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Multilayer-Architecture\\Motorcycles.WebAPI\\Motorcylces.Model\\obj\\",
+        "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.3, )"

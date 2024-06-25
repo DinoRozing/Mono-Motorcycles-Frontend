@@ -2,39 +2,59 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import MotorcycleForm from './components/MotorcycleForm';
 import MotorcycleTable from './components/MotorcycleTable';
-import { getAllMotorcycles, addMotorcycle, deleteMotorcycle, updateMotorcycle } from './utils/localStorage';
+import { getAllMotorcycles, addMotorcycle, deleteMotorcycle, updateMotorcycle } from './hooks/motorcycles';
 
 function ServicePage() {
     const [motorcycles, setMotorcycles] = useState([]);
     const [motorcycleToEdit, setMotorcycleToEdit] = useState(null);
 
     useEffect(() => {
-        const storedMotorcycles = getAllMotorcycles();
-        setMotorcycles(storedMotorcycles);
+        const fetchMotorcycles = async () => {
+            try {
+                const storedMotorcycles = await getAllMotorcycles();
+                setMotorcycles(storedMotorcycles);
+            } catch (error) {
+                console.error('Error fetching motorcycles', error);
+            }
+        };
+        fetchMotorcycles();
     }, []);
 
-    function handleAddMotorcycle(newMotorcycle) {
-        addMotorcycle(newMotorcycle);
-        const updatedMotorcycles = getAllMotorcycles();
-        setMotorcycles(updatedMotorcycles);
-    }
+    const handleAddMotorcycle = async (newMotorcycle) => {
+        try {
+            debugger;
+            await addMotorcycle(newMotorcycle);
+            const updatedMotorcycles = await getAllMotorcycles();
+            setMotorcycles(updatedMotorcycles);
+        } catch (error) {
+            console.error('Error adding motorcycle', error);
+        }
+    };
 
-    function handleDeleteMotorcycle(idToDelete) {
-        deleteMotorcycle(idToDelete);
-        const updatedMotorcycles = getAllMotorcycles();
-        setMotorcycles(updatedMotorcycles);
-    }
+    const handleDeleteMotorcycle = async (idToDelete) => {
+        try {
+            await deleteMotorcycle(idToDelete);
+            const updatedMotorcycles = await getAllMotorcycles();
+            setMotorcycles(updatedMotorcycles);
+        } catch (error) {
+            console.error('Error deleting motorcycle', error);
+        }
+    };
 
-    function handleUpdateMotorcycle(updatedMotorcycle) {
-        updateMotorcycle(updatedMotorcycle);
-        const updatedMotorcycles = getAllMotorcycles();
-        setMotorcycles(updatedMotorcycles);
-        setMotorcycleToEdit(null);
-    }
+    const handleUpdateMotorcycle = async (updatedMotorcycle) => {
+        try {
+            await updateMotorcycle(updatedMotorcycle);
+            const updatedMotorcycles = await getAllMotorcycles();
+            setMotorcycles(updatedMotorcycles);
+            setMotorcycleToEdit(null);
+        } catch (error) {
+            console.error('Error updating motorcycle', error);
+        }
+    };
 
-    function handleEditClick(motorcycle) {
+    const handleEditClick = (motorcycle) => {
         setMotorcycleToEdit(motorcycle);
-    }
+    };
 
     return (
         <div>

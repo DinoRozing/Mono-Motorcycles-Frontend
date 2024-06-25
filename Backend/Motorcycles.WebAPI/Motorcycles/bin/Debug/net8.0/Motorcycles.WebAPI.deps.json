@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.AspNet.Cors": "5.3.0",
           "Motorcycles.Model": "1.0.0",
           "Motorcycles.Repository": "1.0.0",
           "Motorcycles.Repository.Common": "1.0.0",
@@ -42,6 +43,14 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.Cors/5.3.0": {
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {
+            "assemblyVersion": "5.3.0.0",
+            "fileVersion": "5.3.61130.707"
           }
         }
       },
@@ -134,6 +143,7 @@
       },
       "Motorcycles.Model/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Cors": "5.3.0",
           "Npgsql": "8.0.3"
         },
         "runtime": {
@@ -142,6 +152,7 @@
       },
       "Motorcycles.Repository/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Cors": "5.3.0",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Motorcycles.Model": "1.0.0",
@@ -154,6 +165,7 @@
       },
       "Motorcycles.Repository.Common/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Cors": "5.3.0",
           "Motorcycles.Model": "1.0.0",
           "Npgsql": "8.0.3"
         },
@@ -165,6 +177,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.AspNet.Cors": "5.3.0",
           "Motorcycles.Model": "1.0.0",
           "Motorcycles.Repository.Common": "1.0.0",
           "Motorcycles.Service.Common": "1.0.0",
@@ -178,6 +191,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.AspNet.Cors": "5.3.0",
           "Motorcycles.Model": "1.0.0",
           "Npgsql": "8.0.3"
         },
@@ -206,6 +220,13 @@
       "sha512": "sha512-+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
       "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Cors/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GmnL9NNGTheEcUVSzjnFaMaCEIwWdvP6mBed1ux/7M0D2yc+uzZ6UN/gAA5mva1BZmah0G+F+MVaPkoValWpmQ==",
+      "path": "microsoft.aspnet.cors/5.3.0",
+      "hashPath": "microsoft.aspnet.cors.5.3.0.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

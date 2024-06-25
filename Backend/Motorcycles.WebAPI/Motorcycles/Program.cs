@@ -10,6 +10,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -26,10 +36,6 @@ var mapperConfig = new MapperConfiguration(cfg =>
 IMapper mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
-// Register dependencies
-builder.Services.AddScoped<IMotorcycleRepository, MotorcycleRepository>();
-builder.Services.AddScoped<IMotorcycleService, MotorcycleService>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,6 +46,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
+
+// Apply CORS policy
+app.UseCors("AllowAllOrigins");
+
 app.UseAuthorization();
 app.MapControllers();
+
 app.Run();

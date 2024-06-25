@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Motorcycles.WebAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class MotorcycleController : ControllerBase
     {
         private readonly IMotorcycleService _motorcycleService;
@@ -78,7 +78,7 @@ namespace Motorcycles.WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("GetMotorcycle")]
+        [Route("GetMotorcycleById")]
         public async Task<IActionResult> GetMotorcycleAsync(int id)
         {
             if (id == 0)
@@ -104,6 +104,28 @@ namespace Motorcycles.WebAPI.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetMotorcycles")]
+        public async Task<IActionResult> GetMotorcycleAsync()
+        {
+
+            try
+            {
+                var motorcycles = await _motorcycleService.GetMotorcyclesAsync();
+                if (motorcycles != null)
+                {
+                    return Ok(motorcycles);
+                }
+                else
+                {
+                    return NotFound($"Motorcycles not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error: {ex.Message}");
+            }
+        }
         [HttpGet]
         [Route("GetMotorcycleByName")]
         public async Task<IActionResult> GetMotorcyclesByUserNameAsync(string firstName, string lastName)
