@@ -37,7 +37,7 @@ namespace Motorcycles.WebAPI.Controllers
         [HttpPut("UpdateMotorcycle/{id}")]
         public async Task<IActionResult> UpdateMotorcycleAsync(int id, [FromBody] MotorcycleDTO motorcycleDto)
         {
-            if (motorcycleDto == null || motorcycleDto.Id == 0)
+            if (motorcycleDto == null || motorcycleDto.Id != id)
             {
                 return BadRequest("Invalid motorcycle data.");
             }

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles\\controllers\\motorcyclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|solutionrelative:motorcycles\\controllers\\motorcyclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ACBF6B91-648D-40EC-8404-C4B68E891C16}|Motorcycles.Repository\\Motorcycles.Repository.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.repository\\motorcyclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACBF6B91-648D-40EC-8404-C4B68E891C16}|Motorcycles.Repository\\Motorcycles.Repository.csproj|solutionrelative:motorcycles.repository\\motorcyclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.service.common\\imotorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|solutionrelative:motorcycles.service.common\\imotorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.service\\motorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|solutionrelative:motorcycles.service\\motorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.service\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|solutionrelative:motorcycles.service\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.service.common\\imotorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|solutionrelative:motorcycles.service.common\\imotorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB6F8340-7482-4641-8BC6-EDAFBACF8DA9}|Motorcylces.Model\\Motorcycles.Model.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcylces.model\\motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.service.common\\dtos\\motorcycledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D28C680-6943-4F89-AA54-7D0129E2634A}|Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj|solutionrelative:motorcycles.service.common\\dtos\\motorcycledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles.service\\motorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55A480-2B9B-4808-A9E1-724BA0E9AB80}|Motorcycles.Service\\Motorcycles.Service.csproj|solutionrelative:motorcycles.service\\motorcycleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|c:\\users\\dinor\\desktop\\mono-motorcycles-frontend\\backend\\motorcycles.webapi\\motorcycles\\controllers\\motorcyclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AED09619-28FA-4D21-854C-5283937614D5}|Motorcycles\\Motorcycles.WebAPI.csproj|solutionrelative:motorcycles\\controllers\\motorcyclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,20 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MotorcycleDTO.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\DTOs\\MotorcycleDTO.cs",
               "RelativeDocumentMoniker": "Motorcycles.Service.Common\\DTOs\\MotorcycleDTO.cs",
               "ToolTip": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\DTOs\\MotorcycleDTO.cs",
               "RelativeToolTip": "Motorcycles.Service.Common\\DTOs\\MotorcycleDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T09:18:00.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Motorcycle.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycle.cs",
               "RelativeDocumentMoniker": "Motorcylces.Model\\Motorcycle.cs",
@@ -76,46 +76,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "MotorcycleController.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Controllers\\MotorcycleController.cs",
               "RelativeDocumentMoniker": "Motorcycles\\Controllers\\MotorcycleController.cs",
               "ToolTip": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles\\Controllers\\MotorcycleController.cs",
               "RelativeToolTip": "Motorcycles\\Controllers\\MotorcycleController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowCcAAAA4AAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAACYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T07:21:04.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MotorcycleRepository.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\MotorcycleRepository.cs",
               "RelativeDocumentMoniker": "Motorcycles.Repository\\MotorcycleRepository.cs",
               "ToolTip": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Repository\\MotorcycleRepository.cs",
               "RelativeToolTip": "Motorcycles.Repository\\MotorcycleRepository.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAQwJcAAAAqAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA9wDYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T22:58:26.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "MotorcycleService.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\MotorcycleService.cs",
               "RelativeDocumentMoniker": "Motorcycles.Service\\MotorcycleService.cs",
               "ToolTip": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\MotorcycleService.cs",
               "RelativeToolTip": "Motorcycles.Service\\MotorcycleService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T07:13:08.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Motorcycles.Service\\Mapping\\MappingProfile.cs",
@@ -128,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IMotorcycleService.cs",
               "DocumentMoniker": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\IMotorcycleService.cs",
               "RelativeDocumentMoniker": "Motorcycles.Service.Common\\IMotorcycleService.cs",

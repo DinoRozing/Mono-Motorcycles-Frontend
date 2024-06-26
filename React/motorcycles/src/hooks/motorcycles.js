@@ -12,7 +12,7 @@ export const addMotorcycle = async (newMotorcycle) => {
 
 export const updateMotorcycle = async (updatedMotorcycle) => {
     try {
-        const response = await axiosInstance.put(`/api/Motorcycle/UpdateMotorcycle/${updatedMotorcycle.Id}`, updatedMotorcycle);
+        const response = await axiosInstance.put(`/api/Motorcycle/UpdateMotorcycle/${updatedMotorcycle.id}`, updatedMotorcycle);
         return response.data;
     } catch (error) {
         console.error('Error updating motorcycle', error);
