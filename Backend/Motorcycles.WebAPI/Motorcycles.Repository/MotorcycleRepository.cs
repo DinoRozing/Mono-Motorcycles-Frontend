@@ -86,6 +86,16 @@ namespace Motorcycles.Repository
                     command.CommandText = @"DELETE FROM ""Motorcycle"" WHERE ""Id"" = @Id";
                     command.Parameters.AddWithValue("Id", id);
                     await command.ExecuteNonQueryAsync();
+
+                    command.CommandText = @"
+                SELECT pg_get_serial_sequence('""Motorcycle""', 'Id');
+            ";
+                    var sequenceName = (string)await command.ExecuteScalarAsync();
+
+                    command.CommandText = $@"
+                SELECT setval('{sequenceName}', (SELECT COALESCE(MAX(""Id""), 0) + 1 FROM ""Motorcycle""), false);
+            ";
+                    await command.ExecuteNonQueryAsync();
                 }
             }
         }
