@@ -22,6 +22,10 @@ namespace Motorcycles.Service
         public async Task AddMotorcycleAsync(MotorcycleDTO motorcycleDto)
         {
             var motorcycle = _mapper.Map<Motorcycle>(motorcycleDto);
+            motorcycle.DateCreated = DateTime.UtcNow;
+            motorcycle.DateUpdated = DateTime.UtcNow;
+            motorcycle.IsDeleted = false;
+
             await _motorcycleRepository.AddMotorcycleAsync(motorcycle);
         }
 

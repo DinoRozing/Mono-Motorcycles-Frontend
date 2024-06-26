@@ -5,14 +5,14 @@ export const addMotorcycle = async (newMotorcycle) => {
         const response = await axiosInstance.post('/api/Motorcycle/AddMotorcycle', newMotorcycle);
         return response.data;
     } catch (error) {
-        console.error('Error adding motorcycle', error);
+        console.error('Error adding motorcycle', error.response ? error.response.data : error.message);
         throw error;
     }
 };
 
 export const updateMotorcycle = async (updatedMotorcycle) => {
     try {
-        const response = await axiosInstance.put(`/api/Motorcycle/UpdateMotorcycle/${updatedMotorcycle.id}`, updatedMotorcycle);
+        const response = await axiosInstance.put(`/api/Motorcycle/UpdateMotorcycle/${updatedMotorcycle.Id}`, updatedMotorcycle);
         return response.data;
     } catch (error) {
         console.error('Error updating motorcycle', error);

@@ -28,7 +28,7 @@ function ServicePage() {
         } catch (error) {
             console.error('Error adding motorcycle', error);
         }
-    };
+    };    
 
     const handleDeleteMotorcycle = async (idToDelete) => {
         try {
@@ -49,7 +49,7 @@ function ServicePage() {
         } catch (error) {
             console.error('Error updating motorcycle', error);
         }
-    };
+    }; 
 
     const handleEditClick = (motorcycle) => {
         setMotorcycleToEdit(motorcycle);

@@ -9,7 +9,10 @@ namespace Motorcycles.Service.Mapping
         public MappingProfile()
         {
             CreateMap<Motorcycle, MotorcycleDTO>();
-            CreateMap<MotorcycleDTO, Motorcycle>().ForMember(p => p.Id, opt => opt.Ignore());
+            CreateMap<MotorcycleDTO, Motorcycle>()
+            .ForMember(dest => dest.IsDeleted, opt => opt.Ignore())
+            .ForMember(dest => dest.DateCreated, opt => opt.Ignore()) 
+            .ForMember(dest => dest.DateUpdated, opt => opt.Ignore());
         }
     }
 }

@@ -10,11 +10,11 @@ class MotorcycleRow extends Component {
 
     handleDelete = () => {
         this.setState({ isDeleted: true });
-        this.props.onDelete();
+        this.props.onDelete();  // Ovdje provjeri da li je onDelete poziva ispravna funkcija
     }
 
     handleUpdate = () => {
-        this.props.onUpdate(this.props.motorcycle);
+        this.props.onUpdate(this.props.motorcycle);  // Ovdje provjeri da li je onUpdate poziva ispravna funkcija i proslijeđeni objekt
     }
 
     render() {

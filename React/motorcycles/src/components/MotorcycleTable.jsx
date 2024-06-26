@@ -20,8 +20,8 @@ function MotorcycleTable({ motorcycles, onDeleteMotorcycle, onEditMotorcycle }) 
                         <MotorcycleRow 
                             key={motorcycle.id} 
                             motorcycle={motorcycle} 
-                            onDelete={() => onDeleteMotorcycle(motorcycle.id)}
-                            onUpdate={() => onEditMotorcycle(motorcycle)} 
+                            onDelete={() => onDeleteMotorcycle(motorcycle.id)}  // Provjeri da li je ovdje ispravno proslijeđen id
+                            onUpdate={() => onEditMotorcycle(motorcycle)}       // I ovdje
                         />
                     ))}
                 </tbody>
