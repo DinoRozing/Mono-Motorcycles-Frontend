@@ -418,19 +418,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {}
+    "C:\\Users\\dinor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+      "projectUniqueName": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
       "projectName": "Motorcycles.Service.Common",
-      "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\obj\\",
+      "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\Motorcycles.Service.Common.csproj",
+      "packagesPath": "C:\\Users\\dinor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcycles.Service.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dinor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -445,8 +445,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
-              "projectPath": "C:\\Users\\student\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
+            "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj": {
+              "projectPath": "C:\\Users\\dinor\\Desktop\\Mono-Motorcycles-Frontend\\Backend\\Motorcycles.WebAPI\\Motorcylces.Model\\Motorcycles.Model.csproj"
             }
           }
         }

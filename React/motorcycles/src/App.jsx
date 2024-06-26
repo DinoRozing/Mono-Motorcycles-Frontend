@@ -22,14 +22,13 @@ function ServicePage() {
 
     const handleAddMotorcycle = async (newMotorcycle) => {
         try {
-            debugger;
             await addMotorcycle(newMotorcycle);
             const updatedMotorcycles = await getAllMotorcycles();
             setMotorcycles(updatedMotorcycles);
         } catch (error) {
             console.error('Error adding motorcycle', error);
         }
-    };
+    };    
 
     const handleDeleteMotorcycle = async (idToDelete) => {
         try {
@@ -50,7 +49,7 @@ function ServicePage() {
         } catch (error) {
             console.error('Error updating motorcycle', error);
         }
-    };
+    }; 
 
     const handleEditClick = (motorcycle) => {
         setMotorcycleToEdit(motorcycle);

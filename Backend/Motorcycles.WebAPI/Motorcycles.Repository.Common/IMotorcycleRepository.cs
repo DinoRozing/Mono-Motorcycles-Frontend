@@ -9,8 +9,6 @@ namespace Motorcycles.Repository.Common
         Task UpdateMotorcycleAsync(Motorcycle motorcycle);
         Task DeleteMotorcycleAsync(int id);
         Task<Motorcycle> GetMotorcycleAsync(int id);
-        Task<List<Motorcycle>> GetMotorcyclesByUserNameAsync(string firstName, string lastName);
-
         Task<List<Motorcycle>> GetMotorcyclesAsync();
     }
 }
